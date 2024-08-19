@@ -1,0 +1,49 @@
+# Python caches and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Environment settings
+*.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.orig
+*.DS_Store
+
+# Secrets and credentials
+src/config/secrets.json
+src/config/my-service-account.json
+
+# Python virtual environment
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Typeform token and other keys
+config.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MacOS files
+.DS_Store
