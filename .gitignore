@@ -41,6 +41,7 @@ build/
 
 # Typeform token and other keys
 config.json
+secrets.json
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
