@@ -29,7 +29,7 @@ venv.bak/
 
 # Secrets and credentials
 src/config/secrets.json
-src/config/my-service-account.json
+src/config/service_account.json
 
 # Python virtual environment
 pip-wheel-metadata/
@@ -41,7 +41,6 @@ build/
 
 # Typeform token and other keys
 config.json
-secrets.json
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
