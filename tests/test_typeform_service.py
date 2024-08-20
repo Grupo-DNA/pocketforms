@@ -46,6 +46,3 @@ class TestTypeformService(unittest.TestCase):
             self.typeform_service.update_form(data)
 
         self.assertTrue('Bad Request' in str(context.exception))
-
-if __name__ == '__main__':
-    unittest.main()
