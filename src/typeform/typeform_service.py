@@ -10,6 +10,7 @@ class TypeformService:
 			'Content-Type': 'application/json'
 		}
 	def update_form(self, data):
+		
 		url = f'https://api.typeform.com/forms/{self.form_id}'
 		response = requests.put(url, json=data, headers=self.headers)
 		
@@ -39,16 +40,13 @@ class TypeformService:
 	
 	def update_form_with_new_questions(self,typeform_service, trilhas_caracteristicas):
 		typeformcreator = TypeformQuestionCreator
-		existing_form = typeform_service.get_form()
-		print(existing_form)
-		
+		existing_form = typeform_service.get_form()		
 		new_questions = typeformcreator.create_questions_data(trilhas_caracteristicas)
 		existing_form['fields'].extend(new_questions)
-		print(existing_form)
 		response = typeform_service.update_form(existing_form)
 
 		if response.get('status_code') == 200:
 			print("Formulário atualizado com sucesso!")
-			print(response.json())
+			#print(response.json())
 		else:
 			print(f"Erro ao atualizar o formulário: {response}")

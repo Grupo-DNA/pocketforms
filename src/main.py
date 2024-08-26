@@ -17,8 +17,9 @@ def main():
 
     question_creator.create_questions_data(trilhas_caracteristicas=trails)
 
-    typeform_service.update_form_with_new_questions(typeform_service=typeform_service,trilhas_caracteristicas=trails)    
+    #typeform_service.update_form_with_new_questions(typeform_service=typeform_service,trilhas_caracteristicas=trails)    
 
-
+    formularioAtualmente = typeform_service.get_form()
+    print(formularioAtualmente)
 if __name__ == "__main__":
     main()
